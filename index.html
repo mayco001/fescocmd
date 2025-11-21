@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Timer</title>
 </head>
+
+<style>
+
+html, body {
+  font-family: arial, sans-serif;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; 
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+ }
+
+ /* Mude o fundo para branco e a cor do texto para preto (padrão) */
+body {
+    /* Cor de fundo: Branco */
+    background-color: rgb(0, 0, 0); 
+    /* Cor do texto: Preto ou um tom escuro */
+    color: rgb(255, 255, 255); 
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+    align-items: center;    /* Centraliza horizontalmente (o timer já está com margin: 0 auto) */
+    justify-content: center; 
+    min-height: initial;
+    padding-bottom: 60px;
+}
+
+div {
+    display: block; /* Mude de flex para block para o fluxo normal de um documento */
+    /* Define a largura máxima para que o texto não se espalhe muito */
+    max-width: 600px; 
+    /* Centraliza o bloco na página (o margin: 0 auto só funciona com display: block e largura definida) */
+    margin: 0 auto; 
+    /* Remove a posição fixa que estava causando problemas de layout */
+    position: static; 
+    padding: 10px;
+}
+
+/* Garante que o texto dentro do parágrafo esteja alinhado à esquerda como na imagem */
+p {
+    text-align: left;
+    /* Ajusta a margem do parágrafo para ficar mais parecido com a imagem */
+    margin: 1em 0;
+    /* Remove o espaçamento extra entre as linhas (opcional, mas ajuda) */
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: bold; /* Reduz o tamanho da fonte do h1 */
+    margin: 0.5em 0 0.1em 0; /* Ajusta as margens para ficarem mais próximas */
+}
+
+/* Opcional: Estilo específico para o nome da autora, para ser menor que o título */
+#autora {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 2em; /* Adiciona espaço após o nome da autora */
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center;
+    position: fixed; 
+    bottom: 0;     
+    left: 0;        
+    width: 100%;
+    unicode-bidi: isolate;
+}
+
+</style>
+
 <body>
-    <h1>Aqui</h1>
+
+  <div>
+    
+    <h1 style="text-align: center;">Música: Canção</h1>
+    <br>
+    <h1 id="autora" style="text-align: left;"><strong>Maria Cristina Oliveira</strong></h1>
+    
+    <p>
+        Olhos no espelho pra te encontrar,<br>
+        Dentro das veias vou te pulsar,<br>
+        E coração, gelo polar, queima meu corpo...<br>
+        <br>
+        Cores na tela, outonos de amar,<br>
+        De se despir, brisa do mar,<br>
+        Abissal, carnaval, dança de estrelas...<br>
+        <br>
+        Dança em corda bamba o poeta embriagado,<br>
+        Malabarizando no seu circo encantado.<br>
+        Quem será a bela?<br>
+        Quem é a bailarina Nesse teatro?<br>
+        <br>
+        A minha musa é você!<br>
+        A minha estrela é você!<br>
+        A minha vida é você: canção.<br>
+        <br>
+        Dançam borboletas o seu rito de magia,<br>
+        Gira lua, gira sol, o amor é alquimia<br>
+        Que transformou a rosa em rosa bailarina,<br>
+        Com olhos de menina...<br>
+        <br>
+        A natureza é você!<br>
+        A luz do sol é pra você!<br>
+        O meu poema é você: Canção.<br>
+        A minha musa é você!<br>
+        A minha estrela é você!<br>
+        A minha vida é você: Canção.<br>
+    </p>
+
+  </div>
+  <br>
+  <footer>© A3 Midia 2025</footer>
+
+
+
 </body>
 </html>
